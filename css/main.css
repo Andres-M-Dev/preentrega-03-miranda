@@ -1,0 +1,131 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    color: #EBE8C6;
+    background-color: #181818;
+    font-family: "Lilita One", sans-serif;
+    overflow-x: hidden;
+}
+
+/* estilos de header */
+header{
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: #181818;
+}
+   
+
+header .mx-auto img{
+    width: 10rem;
+    height: 5rem;
+}
+
+
+header > button{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* estilos del main */
+
+main{
+    flex: 1;
+    text-align: center;
+}
+
+main h1,main h2{
+    background-color: #4D0359;
+    font-style: italic;
+
+}
+
+main .sub-pag{
+    margin-bottom: 4rem;
+}
+
+main h2{
+    margin-bottom: 4rem;
+}
+
+
+main .carousel-item img{
+    height: 20rem;
+    padding-bottom: 4rem;
+}
+main .productos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 10rem);
+    row-gap: 4rem;
+    column-gap: 0.2rem;
+}
+
+main .producto img{
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid #EBE8C6; 
+
+}
+
+
+/* estilos del footer */
+
+footer{
+    background-color:#440351 ;
+}
+footer nav a{
+    color: #EBE8C6;
+}
+
+/* mq desktop */
+
+@media screen and (min-width: 1024px){
+
+    /* estilos del header */
+    
+    header .logo img{
+    width: 10rem;
+    height: 5rem;
+    }
+
+    header .estantes{
+    padding-right: 50rem;
+    column-gap:2rem
+    }
+    
+    /* estilos del main */
+    main .productos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(3, 10rem);
+    row-gap: 20rem;
+    column-gap: 0.2rem;
+    }
+
+    main .producto img{
+    width: 25rem;
+    height: 25rem;
+    border: 0.1rem solid #EBE8C6; 
+    }
+
+    main .carousel-item img{
+    height: 30rem;
+    }
+}

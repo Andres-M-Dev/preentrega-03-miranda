@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link de bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- link de css -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- link de tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <title>Litufiguras</title>
+    </head>
+
+    <body>
+        <header class="navbar navbar-dark position-sticky top-0">
+            <!--logo para mobile -->
+            <a href="./index.html" class="mx-auto d-lg-none">
+                <img src="./img/general/logo-transparente.png"
+                    alt="logo de litufiguras, tipografia estilo manga con un gato espadachin inspirado en Zoro de One Piece">
+            </a>
+            <!-- logo para web -->
+            <a href="./index.html" class="logo d-none d-lg-flex">
+                <img src="./img/general/logo-transparente.png"
+                    alt="logo de litufiguras, tipografia estilo manga con un gato espadachin inspirado en Zoro de One Piece">
+            </a>
+            <!-- boton hamburguesa solo visible en mobile -->
+            <button class="navbar-toggler d-lg-none hamburger-btn d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuFlotante"
+                    aria-controls="menuFlotante"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu para desktop -->
+            <nav class="estantes d-none d-lg-flex">
+                <a href="./html/figuras.html" class="text-decoration-none text-light">Estante de Figuras</a>
+                <a href="./html/lectura.html" class="text-decoration-none text-light">Estante de Lectura</a>
+            </nav>
+        </header>
+
+        <div id="menuFlotante"
+            class="collapse position-fixed top-0 start-0 mt-5 ms-2"
+            style="z-index:1040;">
+            <div class="card shadow menu-panel">
+                <div class="list-group list-group-flush">
+                    <a href="./html/figuras.html" class="list-group-item list-group-item-action">
+                    Estante de Figuras
+                    </a>
+                    <a href="./html/lectura.html" class="list-group-item list-group-item-action">
+                    Estante de Lectura
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- contenido principal -->
+        <main>
+            <h1>Preventas</h1>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/general/banner.png" class="d-block w-100" alt="banner con las proximas figuras de animes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/figuras/luffyg5-v-kaido.png" class="d-block w-100" alt="imagen figura luffy gear 5 vs kaido">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/figuras/ace.png" class="d-block w-100" alt="imagen figura ace brazos extendidos hacia los lados">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+
+            <h2>Destacados</h2>
+            <section class="productos">
+                <div class="producto">
+                    <img src="./img/figuras/sanji-v-queen.png"  alt="imagen figura sanji ifrit vs queen">
+                    <p>Sanji Ifrit Jambe vs Queen </p>
+                </div>
+
+                <div class="producto">
+                    <img src="./img/figuras/luffyg5-v-kaido.png"  alt="imagen figura luffy gear 5 vs kaido">
+                    <p>Onigashima Luffy G5 vs Kaido</p>
+                </div>
+
+                <div class="producto">
+                    <img src="./img/figuras/genos-regular.png"  alt="imagen figura genos lanzando puño con explosion">
+                    <p>Genos Regular Ver.</p>
+                </div>
+
+                <div class="producto">
+                    <img src="./img/figuras/obito-sixpath.png"  alt="imagen figura obito seis caminos">
+                    <p>Obito Six Paths</p>
+                </div>
+
+                <div class="producto">
+                    <img src="./img/figuras/killua-spark.png"  alt="imagen figura killua godspeed">
+                    <p>Killua Godspeed</p>
+                </div>
+
+                <div class="producto">
+                    <img src="./img/figuras/goku-ultra.png"  alt="imagen figura goku ultra instinto">
+                    <p>Goku Ultra Instinct</p>
+                </div>
+                
+                <div class="producto">
+                    <img src="./img/figuras/ace.png"  alt="imagen figura ace brazos extendidos hacia los lados">
+                    <p>Portgas D. Ace</p> 
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./html/politicas.html">Politicas</a>
+                    </li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Servicio al cliente</li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

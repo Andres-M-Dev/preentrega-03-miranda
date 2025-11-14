@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link de bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- link de css -->
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- link de tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <title>Litufiguras-Figuras</title>
+    </head>
+
+    <body>
+        <header class="navbar navbar-dark position-sticky top-0">
+            <!--logo para mobile -->
+            <a href="../index.html" class="mx-auto d-lg-none">
+                <img src="../img/general/logo-transparente.png"
+                    alt="logo de litufiguras, tipografia estilo manga con un gato espadachin inspirado en Zoro de One Piece">
+            </a>
+            <!-- logo para web -->
+            <a href="../index.html" class="logo d-none d-lg-flex">
+                <img src="../img/general/logo-transparente.png"
+                    alt="logo de litufiguras, tipografia estilo manga con un gato espadachin inspirado en Zoro de One Piece">
+            </a>
+            <!-- boton hamburguesa solo visible en mobile -->
+            <button class="navbar-toggler d-lg-none hamburger-btn d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuFlotante"
+                    aria-controls="menuFlotante"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu para desktop -->
+            <nav class="estantes d-none d-lg-flex">
+                <a href="./lectura.html" class="text-decoration-none text-light">Estante de Lectura</a>
+            </nav>
+        </header>
+
+        <div id="menuFlotante"
+            class="collapse position-fixed top-0 start-0 mt-5 ms-2"
+            style="z-index:1040;">
+            <div class="card shadow menu-panel">
+                <div class="list-group list-group-flush">
+                    <a href="./lectura.html" class="list-group-item list-group-item-action">
+                    Estante de Lectura
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- contenido principal -->
+        <main>
+            <h1 class="sub-pag">Figuras</h1>
+            <section class="productos">
+                <div class="producto">
+                    <img src="../img/figuras/sanji-v-queen.png" alt="imagen figura sanji ifrit vs queen">
+                    <p>Sanji Ifrit Jambe vs Queen</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/funko-gaara-special.png" alt="imagen figura funko pop gaara edicion especial">
+                    <p>FunkoPop Gaara Special Edition</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/naruto-accion.png" alt="imagen figura naruto shippuden articulada">
+                    <p>Naruto Anime Heroes</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/obito-sixpath.png" alt="imagen figura obito seis caminos">
+                    <p>Obito Six Paths</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/funko-shinobu.png" alt="imagen figura funko pop shinobu kocho base mariposas">
+                    <p>FunkoPop Shinobu Kocho</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/zoro-accion.png" alt="imagen figura zoro articulada">
+                    <p>Zoro Anime Heroes</p>
+                </div>
+
+                <div class="producto">
+                    <img src="../img/figuras/ace.png" alt="imagen figura ace brazos extendidos hacia los lados">
+                    <p>Portgas D. Ace</p>
+                </div>
+
+            </section>
+
+        </main>
+
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./politicas.html">Politicas</a>
+                    </li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Servicio al cliente</li>
+                </ul>
+            </nav>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
