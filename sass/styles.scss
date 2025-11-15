@@ -46,6 +46,92 @@ main{
         font-style: italic;
     }
     .sub-page{
-        
+        margin-bottom: 4rem;
+    }
+    .carousel-item{
+        img{
+            height: 20rem;
+            padding-bottom: 4rem;
+        }
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 10rem);
+        row-gap: 4rem;
+        column-gap: 0.2rem;
+            img{
+                width: 10rem;
+                height: 10rem;
+                border: 0.2rem solid #EBE8C6;
+            }
     }
 }
+
+/* estilos del footer */
+
+footer{
+    background-color: #440351;
+    nav{
+        a{
+            color: #EBE8C6;
+        }
+    }
+}
+
+/* mq tablet */
+
+@media (min-width: 576px) and (max-width:1024){
+    main{
+        .politicas-p{
+            padding-left: 25rem;
+            padding-right: 25rem;
+        }
+    }
+}
+
+/* mq desktop */
+
+@media screen and (min-width: 1024px){
+
+/* estilos del header */
+
+    header{
+        .logo{
+            img{
+               width: 10rem;
+                height: 5rem; 
+            }
+        }
+        .estantes{
+            padding-right: 50rem;
+            column-gap:2rem
+        }
+    }
+}
+
+/* estilos del main */
+
+    main{
+        .politicas-p{
+            padding-left: 40rem;
+            padding-right: 40rem;
+        }
+        .productos{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: repeat(3, 10rem);
+            row-gap: 20rem;
+            column-gap: 0.2rem;
+            img{
+                width: 25rem;
+                height: 25rem;
+                border: 0.1rem solid #EBE8C6;
+            }
+        }
+        .carousel-item{
+            img{
+                height: 30rem;
+            }
+        }
+    }

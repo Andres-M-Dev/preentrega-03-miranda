@@ -39,5 +39,72 @@ main h1, main h2 {
   background-color: #4D0359;
   font-style: italic;
 }
+main .sub-page {
+  margin-bottom: 4rem;
+}
+main .carousel-item img {
+  height: 20rem;
+  padding-bottom: 4rem;
+}
+main .productos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5, 10rem);
+  row-gap: 4rem;
+  column-gap: 0.2rem;
+}
+main .productos img {
+  width: 10rem;
+  height: 10rem;
+  border: 0.2rem solid #EBE8C6;
+}
+
+/* estilos del footer */
+footer {
+  background-color: #440351;
+}
+footer nav a {
+  color: #EBE8C6;
+}
+
+/* mq tablet */
+@media (min-width: 576px) and (max-width: 1024) {
+  main .politicas-p {
+    padding-left: 25rem;
+    padding-right: 25rem;
+  }
+}
+/* mq desktop */
+@media screen and (min-width: 1024px) {
+  /* estilos del header */
+  header .logo img {
+    width: 10rem;
+    height: 5rem;
+  }
+  header .estantes {
+    padding-right: 50rem;
+    column-gap: 2rem;
+  }
+}
+/* estilos del main */
+main .politicas-p {
+  padding-left: 40rem;
+  padding-right: 40rem;
+}
+main .productos {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(3, 10rem);
+  row-gap: 20rem;
+  column-gap: 0.2rem;
+}
+main .productos img {
+  width: 25rem;
+  height: 25rem;
+  border: 0.1rem solid #EBE8C6;
+}
+main .carousel-item img {
+  height: 30rem;
+}
 
 /*# sourceMappingURL=new-main.css.map */
