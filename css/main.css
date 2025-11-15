@@ -45,6 +45,11 @@ header > button{
 
 /* estilos del main */
 
+/* main .politicas-p{
+    padding-left: 25em;
+    padding-right: 25em;
+} */
+
 main{
     flex: 1;
     text-align: center;
@@ -69,6 +74,7 @@ main .carousel-item img{
     height: 20rem;
     padding-bottom: 4rem;
 }
+
 main .productos{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -83,7 +89,6 @@ main .producto img{
     border: 0.2rem solid #EBE8C6; 
 
 }
-
 
 /* estilos del footer */
 
