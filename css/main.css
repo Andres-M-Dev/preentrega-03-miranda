@@ -81,9 +81,17 @@ main .productos{
 main .producto img{
     width: 10rem;
     height: 10rem;
-    border: 0.2rem solid #EBE8C6; 
+    border: 0.2rem solid #EBE8C6;
+    margin-bottom: 0.2rem; 
 
 }
+
+main .producto img:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 5px #4D0359;
+  transition: 0.5s;
+}
+
 
 /* estilos del footer */
 
@@ -143,6 +151,6 @@ footer nav a{
     }
 
     main .carousel-item img{
-        height: 30rem;
+        height: 45rem;
     }
 }
