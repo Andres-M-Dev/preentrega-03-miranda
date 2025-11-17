@@ -1,3 +1,4 @@
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -41,9 +42,12 @@ header{
 /* estilos del main */
 
 main{
+    flex: 1;
+    text-align: center;
     h1,h2{
         background-color: #4D0359;
         font-style: italic;
+        margin-bottom: 4rem;
     }
     .sub-page{
         margin-bottom: 4rem;
@@ -60,15 +64,20 @@ main{
         grid-template-rows: repeat(5, 10rem);
         row-gap: 4rem;
         column-gap: 0.2rem;
+        .producto{
             img{
-                width: 10rem;
-                height: 10rem;
+                width: 25rem;
+                height: 25rem;
                 border: 0.2rem solid #EBE8C6;
-                :hover{
-                    transform: scale(2);
+                margin-bottom: 0.2rem;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 5px 5px 5px 5px #4D0359;
+                    transition: 0.5s;
                 }
                 
             }
+        }
             
     }
 }
