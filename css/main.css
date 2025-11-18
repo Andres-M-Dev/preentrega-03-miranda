@@ -40,12 +40,12 @@ main {
   flex: 1;
   text-align: center;
 }
+main .sub-pag {
+  margin-bottom: 4rem;
+}
 main h1, main h2 {
   background-color: #4D0359;
   font-style: italic;
-  margin-bottom: 4rem;
-}
-main .sub-page {
   margin-bottom: 4rem;
 }
 main .carousel-item img {
@@ -59,16 +59,18 @@ main .productos {
   row-gap: 4rem;
   column-gap: 0.2rem;
 }
+main .productos .producto:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 main .productos .producto img {
-  width: 25rem;
-  height: 25rem;
+  width: 10rem;
+  height: 10rem;
   border: 0.2rem solid #EBE8C6;
   margin-bottom: 0.2rem;
 }
 main .productos .producto img:hover {
-  transform: scale(1.1);
   box-shadow: 5px 5px 5px 5px #4D0359;
-  transition: 0.5s;
 }
 
 /* estilos del footer */
@@ -79,44 +81,44 @@ footer nav a {
   color: #EBE8C6;
 }
 
-/* mq tablet */
-@media (min-width: 576px) and (max-width: 1024) {
+/* MQ TABLET */
+@media (min-width: 576px) and (max-width: 1024px) {
   main .politicas-p {
     padding-left: 25rem;
     padding-right: 25rem;
   }
 }
-/* mq desktop */
+/* MQ DESKTOP */
 @media screen and (min-width: 1024px) {
   /* estilos del header */
   header .logo img {
     width: 10rem;
-    height: 5rem;
+    height: 6.5rem;
   }
   header .estantes {
     padding-right: 50rem;
     column-gap: 2rem;
   }
-}
-/* estilos del main */
-main .politicas-p {
-  padding-left: 40rem;
-  padding-right: 40rem;
-}
-main .productos {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: repeat(3, 10rem);
-  row-gap: 20rem;
-  column-gap: 0.2rem;
-}
-main .productos img {
-  width: 25rem;
-  height: 25rem;
-  border: 0.1rem solid #EBE8C6;
-}
-main .carousel-item img {
-  height: 45rem;
+  /* estilos del main */
+  main .politicas-p {
+    padding-left: 40rem;
+    padding-right: 40rem;
+  }
+  main .productos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(3, 10rem);
+    row-gap: 20rem;
+    column-gap: 0.2rem;
+  }
+  main .productos .producto img {
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid #EBE8C6;
+  }
+  main .carousel-item img {
+    height: 40rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

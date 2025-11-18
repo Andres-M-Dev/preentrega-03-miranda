@@ -1,23 +1,7 @@
-/* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    //RESET
+@use "base/reset" as*;
 
-
-/* estilos generales */
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    color: #EBE8C6;
-    background-color: #181818;
-    font-family: "Lilita One", sans-serif;
-    overflow-x: hidden;
-}
-
-/* estilos del header */
+    /* estilos del header */
 
 header{
     top: 0; 
@@ -30,6 +14,7 @@ header{
             width: 10rem;
             height: 5rem;
             }
+
         }
         button{
             position: absolute;
@@ -39,19 +24,22 @@ header{
         }
 }
 
-/* estilos del main */
+    /* estilos del main */
 
 main{
     flex: 1;
     text-align: center;
+
+    .sub-pag{
+        margin-bottom: 4rem;
+    }
+    
     h1,h2{
         background-color: #4D0359;
         font-style: italic;
         margin-bottom: 4rem;
     }
-    .sub-page{
-        margin-bottom: 4rem;
-    }
+ 
     .carousel-item{
         img{
             height: 20rem;
@@ -64,25 +52,29 @@ main{
         grid-template-rows: repeat(5, 10rem);
         row-gap: 4rem;
         column-gap: 0.2rem;
-        .producto{
-            img{
-                width: 25rem;
-                height: 25rem;
-                border: 0.2rem solid #EBE8C6;
-                margin-bottom: 0.2rem;
+            .producto{
                 &:hover{
-                    transform: scale(1.1);
-                    box-shadow: 5px 5px 5px 5px #4D0359;
+                    transform: scale(1.1);  
                     transition: 0.5s;
                 }
                 
+                img{
+                    width:10rem;
+                    height: 10rem;
+                    border: 0.2rem solid #EBE8C6;
+                    margin-bottom: 0.2rem;
+                        &:hover{
+                        box-shadow: 5px 5px 5px 5px #4D0359;
+                        }
+                    
+                    
+                }
             }
-        }
             
     }
 }
 
-/* estilos del footer */
+    /* estilos del footer */
 
 footer{
     background-color: #440351;
@@ -93,9 +85,9 @@ footer{
     }
 }
 
-/* mq tablet */
+    /* MQ TABLET */
 
-@media (min-width: 576px) and (max-width:1024){
+@media (min-width: 576px) and (max-width:1024px){
     main{
         .politicas-p{
             padding-left: 25rem;
@@ -104,27 +96,27 @@ footer{
     }
 }
 
-/* mq desktop */
+    /* MQ DESKTOP */
 
 @media screen and (min-width: 1024px){
 
-/* estilos del header */
+    /* estilos del header */
 
     header{
         .logo{
             img{
                width: 10rem;
-                height: 5rem; 
+                height: 6.5rem; 
             }
         }
         .estantes{
             padding-right: 50rem;
-            column-gap:2rem
+            column-gap:2rem;
         }
     }
-}
 
-/* estilos del main */
+
+    /* estilos del main */
 
     main{
         .politicas-p{
@@ -137,15 +129,18 @@ footer{
             grid-template-rows: repeat(3, 10rem);
             row-gap: 20rem;
             column-gap: 0.2rem;
-            img{
-                width: 25rem;
-                height: 25rem;
-                border: 0.1rem solid #EBE8C6;
-            }
+            .producto{
+                img{
+                    width: 20rem;
+                    height: 20rem;
+                    border: 0.1rem solid #EBE8C6;
+                }
+            }    
         }
         .carousel-item{
             img{
-                height: 45rem;
+                height: 40rem;
             }
         }
     }
+}
