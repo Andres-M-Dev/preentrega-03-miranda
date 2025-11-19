@@ -1,0 +1,45 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+/* MQ DESKTOP */
+@media screen and (min-width: 1024px){
+
+/* estilos del header */
+    header{
+        .logo{
+            img{
+                width: 10rem;
+                height: 6.5rem; 
+            }
+        }
+        .estantes{
+            padding-right: 50rem;
+            column-gap:2rem;
+        }
+    }
+
+    /* estilos del main */
+    main{
+        .politicas-p{
+            padding-left: 40rem;
+            padding-right: 40rem;
+        }
+        .productos{
+            @include productos(grid, repeat(4, 25%), auto, 10rem, 0.2rem, 4rem);
+                .producto{
+                    img{
+                        @include img(20rem, 20rem, 0.1rem solid $font-color, 0.4rem)
+                    }
+            }    
+        }
+        .carousel-item{
+            img{
+                height: 40rem;
+            }
+        }
+    }
+}
+

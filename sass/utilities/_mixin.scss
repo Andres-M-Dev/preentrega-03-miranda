@@ -1,16 +1,18 @@
 
-@mixin productos{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: auto;
-    row-gap: 4rem;
-    column-gap: 0.2rem;
-    margin-bottom: 4rem;     
+@mixin productos($display, $grid-co, $grid-ar, $rg, $col-gap, $margin){
+    display: $display;
+    grid-template-columns: $grid-co;
+    grid-auto-rows: $grid-ar;
+    row-gap: $rg;
+    column-gap: $col-gap;
+    margin-bottom: $margin;
 }
 
-@mixin img{
-    width: 10rem;
-    height: 10rem;
-    border: 0.2rem solid #EBE8C6;
-    margin-bottom: 0.2rem;
+@mixin img($width, $height, $border, $margin){
+    width: $width;
+    height: $height;
+    border: $border;
+    margin-bottom: $margin;
 }
+
+

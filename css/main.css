@@ -40,9 +40,6 @@ main {
   flex: 1;
   text-align: center;
 }
-main .sub-pag {
-  margin-bottom: 4rem;
-}
 main h1, main h2 {
   background-color: #4D0359;
   font-style: italic;
@@ -54,7 +51,7 @@ main .carousel-item img {
 }
 main .productos {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 50%);
   grid-auto-rows: auto;
   row-gap: 4rem;
   column-gap: 0.2rem;
@@ -67,11 +64,14 @@ main .productos .producto:hover {
 main .productos .producto img {
   width: 10rem;
   height: 10rem;
-  border: 0.2rem solid #EBE8C6;
+  border: 0.1rem solid #EBE8C6;
   margin-bottom: 0.2rem;
 }
 main .productos .producto img:hover {
   box-shadow: 5px 5px 5px 5px #4D0359;
+}
+main .productos .producto .precio {
+  text-decoration: underline;
 }
 
 /* estilos del footer */
@@ -82,26 +82,47 @@ footer nav a {
   color: #EBE8C6;
 }
 
+.politicas-p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.sub-pag {
+  margin-bottom: 4rem;
+}
+
 /* MQ TABLET */
-@media (min-width: 576px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
+  /* estilos del header */
+  header {
+    padding: 0.5rem 1rem;
+  }
+  header .mx-auto img {
+    width: 12rem;
+    height: 8rem;
+  }
+  /* estilos del main */
   main .politicas-p {
-    padding-left: 25rem;
-    padding-right: 25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   main .productos {
     display: grid;
-    grid-template-columns: repeat(3, 33, 3%);
+    grid-template-columns: repeat(3, 33.3%);
     grid-auto-rows: auto;
-    row-gap: 10rem;
+    row-gap: 5rem;
     column-gap: 0.2rem;
+    margin-bottom: 4rem;
   }
   main .productos .producto img {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border: 0.1rem solid #EBE8C6;
+    margin-bottom: 0.3rem;
   }
   main .carousel-item img {
-    height: 20rem;
+    height: 30rem;
   }
 }
 /* MQ DESKTOP */
@@ -122,15 +143,17 @@ footer nav a {
   }
   main .productos {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 25%);
     grid-auto-rows: auto;
     row-gap: 10rem;
     column-gap: 0.2rem;
+    margin-bottom: 4rem;
   }
   main .productos .producto img {
     width: 20rem;
     height: 20rem;
     border: 0.1rem solid #EBE8C6;
+    margin-bottom: 0.4rem;
   }
   main .carousel-item img {
     height: 40rem;

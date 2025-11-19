@@ -1,0 +1,41 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+
+//MIXIN
+@use "../utilities/mixin" as *;
+
+/* MQ TABLET */
+@media screen and (min-width: 768px){
+
+/* estilos del header */
+    header{
+        padding: 0.5rem 1rem;
+            .mx-auto{
+                img{
+                    width: 12rem;
+                    height: 8rem;
+                }
+            }
+    }
+
+/* estilos del main */    
+    main{
+        .politicas-p{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .productos{
+            @include productos(grid, repeat(3, 33.3%), auto, 5rem, 0.2rem, 4rem);
+                .producto{
+                    img{
+                       @include img(15rem, 15rem, 0.1rem solid $font-color, 0.3rem);
+                    }
+            }    
+        }
+        .carousel-item{
+            img{
+                height: 30rem;
+            }
+        }
+    }
+}

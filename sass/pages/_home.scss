@@ -33,10 +33,6 @@ background: $black-bg;
     flex: 1;
     text-align: center;
 
-    .sub-pag{
-        margin-bottom: 4rem;
-    }
-    
     h1,h2{
         background-color: $purple-bg;
         font-style: italic;
@@ -50,17 +46,20 @@ background: $black-bg;
         }
     }
     .productos{
-        @include productos;
+        @include productos(grid, repeat(2, 50%), auto, 4rem, 0.2rem, 4rem);
             .producto{
                 &:hover{
                     transform: scale(1.1);  
                     transition: 0.5s;
                 }
                 img{
-                    @include img;
+                    @include img(10rem, 10rem, 0.1rem solid $font-color, 0.2rem);
                         &:hover{
                         box-shadow: 5px 5px 5px 5px $purple-bg;
                         }
+                }
+                .precio{
+                    text-decoration: underline;
                 }
             }      
     }

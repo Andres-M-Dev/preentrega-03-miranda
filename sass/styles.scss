@@ -2,83 +2,13 @@
 @use "base/reset";
 
     //HOME
-@use "pages/home"; 
+@use "pages/home";
 
-    /* MQ TABLET */
+    //POLITICAS
+@use "pages/politicas";
 
-@media (min-width: 576px) and (max-width:1024px){
-    main{
-        .politicas-p{
-            padding-left: 25rem;
-            padding-right: 25rem;
-        }
-        .productos{
-            display: grid;
-            grid-template-columns: repeat(3, 33,3%);
-            grid-auto-rows: auto;
-            row-gap: 10rem;
-            column-gap: 0.2rem;
-                .producto{
-                    img{
-                        width: 20rem;
-                        height: 20rem;
-                        border: 0.1rem solid #EBE8C6;
-                    }
-            }    
-        }
-        .carousel-item{
-            img{
-                height: 20rem;
-            }
-        }
-    }
-}
+    //TABLET
+@use "layout/mq-tablet";
     
-    /* MQ DESKTOP */
-
-@media screen and (min-width: 1024px){
-
-    /* estilos del header */
-
-    header{
-        .logo{
-            img{
-                width: 10rem;
-                height: 6.5rem; 
-            }
-        }
-        .estantes{
-            padding-right: 50rem;
-            column-gap:2rem;
-        }
-    }
-
-
-    /* estilos del main */
-
-    main{
-        .politicas-p{
-            padding-left: 40rem;
-            padding-right: 40rem;
-        }
-        .productos{
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-auto-rows: auto;
-            row-gap: 10rem;
-            column-gap: 0.2rem;
-                .producto{
-                    img{
-                        width: 20rem;
-                        height: 20rem;
-                        border: 0.1rem solid #EBE8C6;
-                    }
-            }    
-        }
-        .carousel-item{
-            img{
-                height: 40rem;
-            }
-        }
-    }
-}
+    //DESKTOP
+@use "layout/mq-desktop";
