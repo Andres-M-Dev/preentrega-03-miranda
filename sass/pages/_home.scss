@@ -18,7 +18,10 @@ background: $black-bg;
             height: 5rem;
         }
     }
-
+    .estantes-home{
+        padding-right: 50rem;
+        column-gap:2rem;
+    }
     button{
         position: absolute;
         left: 1rem;
@@ -32,13 +35,11 @@ background: $black-bg;
  main{
     flex: 1;
     text-align: center;
-
     h1,h2{
         background-color: $purple-bg;
         font-style: italic;
         margin-bottom: 4rem;
     }
- 
     .carousel-item{
         img{
             height: 20rem;

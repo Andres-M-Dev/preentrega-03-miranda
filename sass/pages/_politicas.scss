@@ -1,10 +1,20 @@
+//estilos del header
+header{
+    .estantes-politicas{
+        padding-right: 50rem;
+        gap: 2rem;
+    }
+}
+
 //estilos del main
-    .politicas-p{
+    main{
+        .sub-pag{
+        margin-bottom: 4rem;
+        }
+        .politicas-p{
         padding-left: 2rem;
         padding-right: 2rem;
         margin-bottom: 4rem;
+        }   
     }
-
-    .sub-pag{
-        margin-bottom: 4rem;
-    }
+    

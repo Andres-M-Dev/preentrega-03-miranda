@@ -28,6 +28,10 @@ header .mx-auto img {
   width: 10rem;
   height: 5rem;
 }
+header .estantes-home {
+  padding-right: 50rem;
+  column-gap: 2rem;
+}
 header button {
   position: absolute;
   left: 1rem;
@@ -82,13 +86,27 @@ footer nav a {
   color: #EBE8C6;
 }
 
-.politicas-p {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 4rem;
+header .estantes-figuras {
+  padding-right: 42rem;
+  gap: 2rem;
 }
 
-.sub-pag {
+header .estantes-lectura {
+  padding-right: 45rem;
+  gap: 2rem;
+}
+
+header .estantes-politicas {
+  padding-right: 50rem;
+  gap: 2rem;
+}
+
+main .sub-pag {
+  margin-bottom: 4rem;
+}
+main .politicas-p {
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -131,10 +149,6 @@ footer nav a {
   header .logo img {
     width: 10rem;
     height: 6.5rem;
-  }
-  header .estantes {
-    padding-right: 50rem;
-    column-gap: 2rem;
   }
   /* estilos del main */
   main .politicas-p {
