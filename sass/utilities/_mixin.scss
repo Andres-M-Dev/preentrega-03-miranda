@@ -1,3 +1,16 @@
-@mixin productos($productos){
-    productos: $productos;
+
+@mixin productos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    row-gap: 4rem;
+    column-gap: 0.2rem;
+    margin-bottom: 4rem;     
+}
+
+@mixin img{
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid #EBE8C6;
+    margin-bottom: 0.2rem;
 }

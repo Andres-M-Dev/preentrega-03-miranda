@@ -1,0 +1,78 @@
+ //VARIABLES
+@use "../utilities/variables" as *;
+ 
+ //MIXIN
+@use "../utilities/mixin" as *;
+
+ /* estilos del header */
+ 
+header{
+top: 0; 
+z-index: 1000;
+display: flex;
+align-items: center;
+background: $black-bg;
+    .mx-auto{
+        img{
+            width: 10rem;
+            height: 5rem;
+        }
+    }
+
+    button{
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+ /* estilos del main */
+
+ main{
+    flex: 1;
+    text-align: center;
+
+    .sub-pag{
+        margin-bottom: 4rem;
+    }
+    
+    h1,h2{
+        background-color: $purple-bg;
+        font-style: italic;
+        margin-bottom: 4rem;
+    }
+ 
+    .carousel-item{
+        img{
+            height: 20rem;
+            padding-bottom: 4rem;
+        }
+    }
+    .productos{
+        @include productos;
+            .producto{
+                &:hover{
+                    transform: scale(1.1);  
+                    transition: 0.5s;
+                }
+                img{
+                    @include img;
+                        &:hover{
+                        box-shadow: 5px 5px 5px 5px $purple-bg;
+                        }
+                }
+            }      
+    }
+}
+
+ /* estilos del footer */
+
+footer{
+    background-color: $purple-bg;
+    nav{
+        a{
+            color: $font-color;
+        }
+    }
+}

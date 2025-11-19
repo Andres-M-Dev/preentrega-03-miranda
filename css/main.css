@@ -55,9 +55,10 @@ main .carousel-item img {
 main .productos {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(5, 10rem);
+  grid-auto-rows: auto;
   row-gap: 4rem;
   column-gap: 0.2rem;
+  margin-bottom: 4rem;
 }
 main .productos .producto:hover {
   transform: scale(1.1);
@@ -75,7 +76,7 @@ main .productos .producto img:hover {
 
 /* estilos del footer */
 footer {
-  background-color: #440351;
+  background-color: #4D0359;
 }
 footer nav a {
   color: #EBE8C6;
@@ -86,6 +87,21 @@ footer nav a {
   main .politicas-p {
     padding-left: 25rem;
     padding-right: 25rem;
+  }
+  main .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 33, 3%);
+    grid-auto-rows: auto;
+    row-gap: 10rem;
+    column-gap: 0.2rem;
+  }
+  main .productos .producto img {
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid #EBE8C6;
+  }
+  main .carousel-item img {
+    height: 20rem;
   }
 }
 /* MQ DESKTOP */
@@ -107,8 +123,8 @@ footer nav a {
   main .productos {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(3, 10rem);
-    row-gap: 20rem;
+    grid-auto-rows: auto;
+    row-gap: 10rem;
     column-gap: 0.2rem;
   }
   main .productos .producto img {

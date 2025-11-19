@@ -1,89 +1,8 @@
     //RESET
-@use "base/reset" as*;
+@use "base/reset";
 
-    /* estilos del header */
-
-header{
-    top: 0; 
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    background: #181818;
-        .mx-auto{
-            img{
-            width: 10rem;
-            height: 5rem;
-            }
-
-        }
-        button{
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-}
-
-    /* estilos del main */
-
-main{
-    flex: 1;
-    text-align: center;
-
-    .sub-pag{
-        margin-bottom: 4rem;
-    }
-    
-    h1,h2{
-        background-color: #4D0359;
-        font-style: italic;
-        margin-bottom: 4rem;
-    }
- 
-    .carousel-item{
-        img{
-            height: 20rem;
-            padding-bottom: 4rem;
-        }
-    }
-    .productos{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, 10rem);
-        row-gap: 4rem;
-        column-gap: 0.2rem;
-            .producto{
-                &:hover{
-                    transform: scale(1.1);  
-                    transition: 0.5s;
-                }
-                
-                img{
-                    width:10rem;
-                    height: 10rem;
-                    border: 0.2rem solid #EBE8C6;
-                    margin-bottom: 0.2rem;
-                        &:hover{
-                        box-shadow: 5px 5px 5px 5px #4D0359;
-                        }
-                    
-                    
-                }
-            }
-            
-    }
-}
-
-    /* estilos del footer */
-
-footer{
-    background-color: #440351;
-    nav{
-        a{
-            color: #EBE8C6;
-        }
-    }
-}
+    //HOME
+@use "pages/home"; 
 
     /* MQ TABLET */
 
@@ -93,9 +12,28 @@ footer{
             padding-left: 25rem;
             padding-right: 25rem;
         }
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(3, 33,3%);
+            grid-auto-rows: auto;
+            row-gap: 10rem;
+            column-gap: 0.2rem;
+                .producto{
+                    img{
+                        width: 20rem;
+                        height: 20rem;
+                        border: 0.1rem solid #EBE8C6;
+                    }
+            }    
+        }
+        .carousel-item{
+            img{
+                height: 20rem;
+            }
+        }
     }
 }
-
+    
     /* MQ DESKTOP */
 
 @media screen and (min-width: 1024px){
@@ -105,7 +43,7 @@ footer{
     header{
         .logo{
             img{
-               width: 10rem;
+                width: 10rem;
                 height: 6.5rem; 
             }
         }
@@ -126,15 +64,15 @@ footer{
         .productos{
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: repeat(3, 10rem);
-            row-gap: 20rem;
+            grid-auto-rows: auto;
+            row-gap: 10rem;
             column-gap: 0.2rem;
-            .producto{
-                img{
-                    width: 20rem;
-                    height: 20rem;
-                    border: 0.1rem solid #EBE8C6;
-                }
+                .producto{
+                    img{
+                        width: 20rem;
+                        height: 20rem;
+                        border: 0.1rem solid #EBE8C6;
+                    }
             }    
         }
         .carousel-item{
